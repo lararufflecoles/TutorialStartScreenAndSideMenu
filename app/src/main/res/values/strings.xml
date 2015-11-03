@@ -4,8 +4,16 @@
     <string name="action_settings">Settings</string>
     <string name="action_share">Share</string>
     <string name="action_search">Search</string>
-    <string name="cat_tutorial">Baconcup and Maple Tutorial</string>
+    <string name="tutorial_screen_text">Tutorial Screen</string>
     <string name="tutorial_screen_done">Done</string>
+    <string name="drawer_header_text">Drawer Header</string>
     <string name="main_activity">This is the main activity</string>
+
+    <string name="nav_item_attachment">Attachment</string>
+    <string name="nav_item_images">Images</string>
+    <string name="nav_item_location">My Location</string>
+    <string name="nav_sub_menu">Sub Menu</string>
+    <string name="nav_sub_menu_item01">Sub Menu Item 1</string>
+    <string name="nav_sub_menu_item02">Sub Menu Item 2</string>
 
 </resources>

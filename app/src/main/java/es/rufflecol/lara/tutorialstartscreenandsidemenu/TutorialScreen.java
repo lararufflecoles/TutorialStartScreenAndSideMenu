@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class TutorialScreen extends AppCompatActivity {
 
@@ -16,9 +15,6 @@ public class TutorialScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_screen);
-
-        ImageView imageView = (ImageView) findViewById(R.id.bm);
-        imageView.setImageResource(R.drawable.bm);
 
         button = (Button) findViewById(R.id.doneButton);
         button.setOnClickListener(new View.OnClickListener() {

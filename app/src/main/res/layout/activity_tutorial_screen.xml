@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/dark_green">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cat_tutorial"
-        android:textSize="18dp"
         android:layout_alignParentTop="true"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp" />
-
-    <ImageView
-        android:id="@+id/bm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/bm" />
+        android:paddingLeft="@dimen/side_padding"
+        android:paddingTop="@dimen/top_padding"
+        android:text="@string/tutorial_screen_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_header" />
 
     <Button
         android:id="@+id/doneButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:onClick="onDone"
-        android:text="@string/tutorial_screen_done"/>
+        android:layout_marginBottom="@dimen/bottom_margin_padding"
+        android:layout_marginLeft="@dimen/side_margin_padding"
+        android:layout_marginRight="@dimen/side_margin_padding"
+        android:text="@string/tutorial_screen_done" />
 
 </RelativeLayout>
