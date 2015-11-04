@@ -5,7 +5,8 @@
     <dimen name="bottom_margin_padding">5dp</dimen>
     <dimen name="side_margin_padding">5dp</dimen>
     <dimen name="side_padding">15dp</dimen>
-    <dimen name="text_size_normal">18sp</dimen>
     <dimen name="text_size_header">20sp</dimen>
+    <dimen name="text_size_sub_header">18sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
 
 </resources>

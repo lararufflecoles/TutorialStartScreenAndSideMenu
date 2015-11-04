@@ -18,15 +18,52 @@
             android:background="@color/dark_green"
             android:minHeight="?attr/actionBarSize" />
 
-        <TextView
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/toolbar"
-            android:paddingLeft="@dimen/side_padding"
-            android:paddingTop="@dimen/top_padding"
-            android:text="@string/main_activity"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_normal" />
+            android:fillViewport="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+    
+                <TextView
+                    android:id="@+id/main_activity_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/toolbar"
+                    android:paddingLeft="@dimen/side_padding"
+                    android:paddingRight="@dimen/side_padding"
+                    android:paddingTop="@dimen/top_padding"
+                    android:text="@string/main_activity_sub_header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_sub_header" />
+
+                <ImageView
+                    android:id="@+id/bmImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_activity_header"
+                    android:paddingLeft="@dimen/side_padding"
+                    android:paddingRight="@dimen/side_padding" />
+
+                <TextView
+                    android:id="@+id/main_activity_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bmImageView"
+                    android:paddingLeft="@dimen/side_padding"
+                    android:paddingRight="@dimen/side_padding"
+                    android:text="@string/main_activity_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </RelativeLayout>
 

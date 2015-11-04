@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        ImageView imageView = (ImageView) findViewById(R.id.bmImageView);
+        imageView.setImageResource(R.drawable.bm);
     }
 
 
