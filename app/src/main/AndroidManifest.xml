@@ -20,7 +20,7 @@
 
         <activity android:name="es.rufflecol.lara.tutorialstartscreenandsidemenu.MainActivity"
             android:label="@string/activity_main">
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="es.rufflecol.lara.tutorialstartscreenandsidemenu.TutorialScreen" />

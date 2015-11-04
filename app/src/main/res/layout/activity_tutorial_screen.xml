@@ -12,7 +12,8 @@
         android:paddingTop="@dimen/top_padding"
         android:text="@string/tutorial_screen_text"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_header" />
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/doneButton"
@@ -20,8 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/bottom_margin_padding"
-        android:layout_marginLeft="@dimen/side_margin_padding"
-        android:layout_marginRight="@dimen/side_margin_padding"
+        android:layout_marginLeft="@dimen/done_button_margin_padding"
+        android:layout_marginRight="@dimen/done_button_margin_padding"
         android:text="@string/tutorial_screen_done" />
 
 </RelativeLayout>

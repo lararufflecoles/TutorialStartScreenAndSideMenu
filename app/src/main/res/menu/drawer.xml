@@ -21,7 +21,8 @@
         <menu>
             <item
                 android:icon="@drawable/ic_emoticon"
-                android:title="@string/nav_sub_menu_item01" />
+                android:title="@string/nav_sub_menu_item01"
+                android:textSize="@dimen/text_size_sub_header"/>
             <item
                 android:icon="@drawable/ic_emoticon"
                 android:title="@string/nav_sub_menu_item02" />
