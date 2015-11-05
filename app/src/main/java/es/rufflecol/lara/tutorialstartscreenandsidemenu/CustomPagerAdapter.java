@@ -6,16 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
 class CustomPagerAdapter extends PagerAdapter {
 
-    Context mContext;
-    LayoutInflater mLayoutInflater;
+    private Context context;
+    private LayoutInflater layoutInflater;
 
     public CustomPagerAdapter(Context context) {
-        mContext = context;
-        mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        this.context = context;
+        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -25,7 +25,7 @@ class CustomPagerAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return view == ((RelativeLayout) object);
+        return view == ((LinearLayout) object);
     }
 
     int[] resources = {
@@ -36,22 +36,17 @@ class CustomPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        View itemView = mLayoutInflater.inflate(R.layout.activity_tutorial_screen, container, false);
+        View itemView = layoutInflater.inflate(R.layout.item_tutorial, container, false);
 
         ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
         imageView.setImageResource(resources[position]);
 
-//        TextView textView = (TextView) itemView.findViewById(R.id.tutorial_activity_text);
-//        textView.setText(resources[position]);
-
         container.addView(itemView);
-
         return itemView;
     }
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        container.removeView((RelativeLayout) object);
+        container.removeView((LinearLayout) object);
     }
 }
-

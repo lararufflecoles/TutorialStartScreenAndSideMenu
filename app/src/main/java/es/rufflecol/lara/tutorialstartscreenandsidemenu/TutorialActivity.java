@@ -7,14 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class TutorialScreen extends AppCompatActivity {
+public class TutorialActivity extends AppCompatActivity {
 
     private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutorial_screen);
+        setContentView(R.layout.activity_tutorial);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new CustomPagerAdapter(this));
@@ -25,7 +25,7 @@ public class TutorialScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(TutorialScreen.this, MainActivity.class);
+                Intent intent = new Intent(TutorialActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
