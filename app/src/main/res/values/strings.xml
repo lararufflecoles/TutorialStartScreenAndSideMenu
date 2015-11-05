@@ -22,8 +22,8 @@
     <!--Main activity-->
     <string name="activity_main">Main Activity</string>
     <string name="main_activity_sub_header">This is the main activity</string>
-    <string name="main_activity_text">Maple and BaconCup 4eva
-        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <string name="main_activity_text1"><a href="https://instagram.com/baconcup">Maple and Baconcup 4eva</a></string>
+    <string name="main_activity_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

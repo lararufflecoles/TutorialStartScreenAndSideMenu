@@ -41,14 +41,26 @@
                     android:paddingTop="@dimen/top_padding" />
 
                 <TextView
-                    android:id="@+id/main_activity_text"
+                    android:id="@+id/main_activity_text1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/bmImageView"
                     android:paddingLeft="@dimen/side_padding"
                     android:paddingRight="@dimen/side_padding"
                     android:paddingTop="@dimen/top_padding"
-                    android:text="@string/main_activity_text"
+                    android:text="@string/main_activity_text1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/main_activity_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_activity_text2"
+                    android:paddingLeft="@dimen/side_padding"
+                    android:paddingRight="@dimen/side_padding"
+                    android:paddingTop="@dimen/top_padding"
+                    android:text="@string/main_activity_text2"
                     android:textColor="@color/white"
                     android:textSize="@dimen/text_size_normal" />
 
@@ -67,6 +79,3 @@
         app:menu="@menu/drawer" />
 
 </android.support.v4.widget.DrawerLayout>
-
-
-    <!--app:itemTextColor="@color/dark_green"-->
