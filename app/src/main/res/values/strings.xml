@@ -8,6 +8,7 @@
 
     <!--Tutorial Screen-->
     <string name="tutorial_screen_text">Tutorial Screen</string>
+    <string name="tutorial_screen_text_normal">Lorem ipsum dolor sit amet</string>
     <string name="tutorial_screen_done">Done</string>
 
     <!--Side Menu-->
