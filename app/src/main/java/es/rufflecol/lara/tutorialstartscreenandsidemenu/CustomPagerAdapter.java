@@ -7,15 +7,40 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 class CustomPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
 
+    // The resources are in an array of ints because they are actually resource IDs.
+    // If you find R.java you can see how the drawables are referenced as ints.
+    private int[] resources = {
+            R.drawable.first1, R.drawable.second2, R.drawable.third3,
+    };
+
+    private String[] text = {
+            "I like cats, miaow!", "I like kittens, meow!", "I like pussies, mew!",
+    };
+
     public CustomPagerAdapter(Context context) {
         this.context = context;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
+
+    @Override
+    public Object instantiateItem(ViewGroup container, int position) {
+        View itemView = layoutInflater.inflate(R.layout.item_tutorial, container, false);
+
+        ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
+        imageView.setImageResource(resources[position]);
+
+        TextView textView = (TextView) itemView.findViewById(R.id.tutorial_screen_text);
+        textView.setText(text[position]);
+
+        container.addView(itemView);
+        return itemView;
     }
 
     @Override
@@ -26,23 +51,6 @@ class CustomPagerAdapter extends PagerAdapter {
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return view == ((LinearLayout) object);
-    }
-
-    int[] resources = {
-            R.drawable.first1,
-            R.drawable.second2,
-            R.drawable.third3,
-    };
-
-    @Override
-    public Object instantiateItem(ViewGroup container, int position) {
-        View itemView = layoutInflater.inflate(R.layout.item_tutorial, container, false);
-
-        ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
-        imageView.setImageResource(resources[position]);
-
-        container.addView(itemView);
-        return itemView;
     }
 
     @Override

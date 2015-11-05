@@ -8,4 +8,8 @@
         <item name="android:textColorSecondary">@color/white</item>
     </style>
 
+    <style name="MyTitleTextApperance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

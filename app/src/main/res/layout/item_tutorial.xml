@@ -23,6 +23,6 @@
         android:paddingTop="@dimen/top_padding"
         android:text="@string/tutorial_screen_text_normal"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_normal" />
+        android:textSize="@dimen/text_size_caption" />
 
 </LinearLayout>

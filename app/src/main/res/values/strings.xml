@@ -8,7 +8,7 @@
 
     <!--Tutorial Screen-->
     <string name="tutorial_screen_text">Tutorial Screen</string>
-    <string name="tutorial_screen_text_normal">Lorem ipsum dolor sit amet</string>
+    <string name="tutorial_screen_text_normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
     <string name="tutorial_screen_done">Done</string>
 
     <!--Side Menu-->
@@ -20,7 +20,7 @@
     <string name="nav_sub_menu_item01">Sub Menu Item 1</string>
     <string name="nav_sub_menu_item02">Sub Menu Item 2</string>
 
-    <!--Main activity-->
+    <!--Main Activity-->
     <string name="activity_main">Main Activity</string>
     <string name="main_activity_sub_header">This is the main activity</string>
     <string name="main_activity_text1"><a href="https://instagram.com/baconcup">Maple and Baconcup 4eva</a></string>
