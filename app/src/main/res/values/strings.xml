@@ -13,6 +13,7 @@
 
     <!--Side Menu-->
     <string name="drawer_header_text">Drawer Header</string>
+    <string name="drawer_sub_header_text">Sub Header</string>
     <string name="nav_item_attachment">Attachment</string>
     <string name="nav_item_images">Images</string>
     <string name="nav_item_location">My Location</string>

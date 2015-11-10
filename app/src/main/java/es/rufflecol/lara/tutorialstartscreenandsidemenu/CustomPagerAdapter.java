@@ -21,7 +21,7 @@ class CustomPagerAdapter extends PagerAdapter {
     };
 
     private String[] text = {
-            "I like cats, miaow!", "I like kittens, meow!", "I like pussies, mew!",
+            "Tutorial Screen 1 of 3", "Tutorial Screen 2 of 3", "Tutorial Screen 3 of 3",
     };
 
     public CustomPagerAdapter(Context context) {
