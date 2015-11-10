@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.viewpagerindicator.CirclePageIndicator;
+
 public class TutorialActivity extends AppCompatActivity {
 
     private Button button;
@@ -18,6 +20,9 @@ public class TutorialActivity extends AppCompatActivity {
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new CustomPagerAdapter(this));
+
+        CirclePageIndicator indicator = (CirclePageIndicator)findViewById(R.id.indicator);
+        indicator.setViewPager(viewPager);
 
         button = (Button) findViewById(R.id.doneButton);
         button.setOnClickListener(new View.OnClickListener() {

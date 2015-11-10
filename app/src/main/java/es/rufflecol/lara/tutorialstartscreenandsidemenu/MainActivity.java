@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitleTextAppearance(this, R.style.MyTitleTextApperance);
+        toolbar.setTitleTextAppearance(this, R.style.TitleTextAppearance);
         setSupportActionBar(toolbar);
 
         ActionBar actionBar = getSupportActionBar();

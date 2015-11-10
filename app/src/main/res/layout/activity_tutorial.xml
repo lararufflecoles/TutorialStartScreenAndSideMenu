@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.v4.view.ViewPager
@@ -10,13 +11,22 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/misc_padding"
+        android:paddingBottom="@dimen/misc_padding"
+        app:fillColor="@color/dark_green"
+        app:strokeColor="@color/dark_green"/>
+
     <Button
         android:id="@+id/doneButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/bottom_margin_padding"
-        android:layout_marginLeft="@dimen/done_button_margin_padding"
-        android:layout_marginRight="@dimen/done_button_margin_padding"
+        android:layout_marginLeft="@dimen/button_margin_padding"
+        android:layout_marginRight="@dimen/button_margin_padding"
+        android:layout_marginBottom="@dimen/button_margin_padding"
         android:text="@string/tutorial_screen_done" />
 
 </LinearLayout>
