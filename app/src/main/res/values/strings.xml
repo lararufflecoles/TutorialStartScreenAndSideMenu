@@ -17,9 +17,8 @@
     <string name="nav_item_attachment">Attachment</string>
     <string name="nav_item_images">Images</string>
     <string name="nav_item_location">My Location</string>
-    <string name="nav_sub_menu">Sub Menu</string>
-    <string name="nav_sub_menu_item01">Sub Menu Item 1</string>
-    <string name="nav_sub_menu_item02">Sub Menu Item 2</string>
+    <string name="nav_happy_face1">Happy Face 1</string>
+    <string name="nav_happy_face2">Happy Face 2</string>
 
     <!--Main Activity-->
     <string name="activity_main">Main Activity</string>

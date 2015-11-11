@@ -12,17 +12,12 @@
         <item
             android:icon="@drawable/ic_place"
             android:title="@string/nav_item_location" />
+        <item
+            android:icon="@drawable/ic_emoticon"
+            android:title="@string/nav_happy_face1" />
+        <item
+            android:icon="@drawable/ic_emoticon"
+            android:title="@string/nav_happy_face2" />
     </group>
-
-    <item android:title="@string/nav_sub_menu">
-        <menu>
-            <item
-                android:icon="@drawable/ic_emoticon"
-                android:title="@string/nav_sub_menu_item01" />
-            <item
-                android:icon="@drawable/ic_emoticon"
-                android:title="@string/nav_sub_menu_item02" />
-        </menu>
-    </item>
 
 </menu>
